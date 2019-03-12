@@ -1,0 +1,27 @@
+body{
+    --backgrounder: #b3ffcc;
+}
+
+table{
+    background-color: var(--backgrounder);
+}
+
+td{
+    padding: 15px;
+    background-color: #00b33c;
+    color: #ffffff;
+}
+
+.kalaha{
+    background-color: #004d1a;
+    color: #ffffff;
+}
+
+.niks{
+    background-color: var(--backgrounder);
+    border:0px;
+}
+
+table, th, td {
+    border: 1px;
+}
