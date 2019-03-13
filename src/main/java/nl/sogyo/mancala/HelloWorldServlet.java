@@ -10,7 +10,6 @@ public class HelloWorldServlet extends HttpServlet {
                          HttpServletResponse response)
             throws ServletException, IOException {
         RequestDispatcher main = request.getRequestDispatcher("../WEB-INF/lib/main.jsp");
-        //RequestDispatcher main = request.getRequestDispatcher("../leeg.jsp");
         main.forward(request, response);
     }
 }
