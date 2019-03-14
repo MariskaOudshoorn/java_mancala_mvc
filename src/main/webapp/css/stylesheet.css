@@ -1,14 +1,21 @@
 body{
     --backgrounder: #b3ffcc;
+    text-align: center;
 }
 
 table{
     background-color: var(--backgrounder);
+    margin: 0 auto;
 }
 
 td{
     background-color: #00b33c;
     color: #ffffff;
+}
+
+img{
+    width: 480px;
+    height: 360px;
 }
 
 .kalaha{
@@ -35,8 +42,11 @@ table, th, td {
     border: none;
 }
 
+.button:hover, .kalaha.button:hover{
+    background-color: #ed3d3d;
+}
+
 .kalaha .button{
     height:300px;
     background-color: #004d1a;
-
 }

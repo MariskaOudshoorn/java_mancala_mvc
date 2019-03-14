@@ -3,6 +3,8 @@ package nl.sogyo.mancala;
 public class MancalaData {
 
     int[] bowlAmounts = new int[14];
+    Player currentPlayer;
+    int winner = 0;
 
     public MancalaData(){
 
@@ -12,6 +14,8 @@ public class MancalaData {
         for(int i = 0; i <bowlAmounts.length; i++){
             bowlAmounts[i] = mancala.getSeedAmount(i);
         }
+        currentPlayer= mancala.player;
+        winner = mancala.winner;
     }
 
     public int getFirstBowlCount(){
@@ -55,5 +59,15 @@ public class MancalaData {
     }
     public int getKalahaTwoCount(){
         return bowlAmounts[13];
+    }
+    public int getCurrentPlayer(){
+        int player =2;
+        if(currentPlayer.getMyTurn()){
+            player=1;
+        }
+        return player;
+    }
+    public int getWinner(){
+        return winner;
     }
 }

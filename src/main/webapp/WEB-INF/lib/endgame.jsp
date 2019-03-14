@@ -6,8 +6,9 @@
     </head>
     <body>
         <jsp:useBean id="MancalaData" class="nl.sogyo.mancala.MancalaData" scope="request"/>
-        <p> <h1>Welcome to this game of mancala: <br>
-        The current player = <jsp:getProperty name="MancalaData" property="currentPlayer"/> </h1></p>
+        <img src="../giphy.gif" alt="slithersnek">
+        <p> <h1>The game has ended <br>
+        The winner is player: <jsp:getProperty name="MancalaData" property="winner"/></h1></p>
         <div>
             <table>
                 <tr>
