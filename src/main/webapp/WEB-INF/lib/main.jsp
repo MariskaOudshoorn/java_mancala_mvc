@@ -3,6 +3,7 @@
     <head>
         <title>Mancala game</title>
         <link rel="stylesheet" href="../css/stylesheet.css">
+        <link rel="icon" href="../giphy.gif" type="image/gif">
     </head>
     <body>
         <jsp:useBean id="MancalaData" class="nl.sogyo.mancala.MancalaData" scope="request"/>

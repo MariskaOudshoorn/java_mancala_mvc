@@ -28,7 +28,6 @@ public class mancalaServlet extends HttpServlet{
         int bowlnumber = Integer.parseInt(bowl[1]);
         mancala.doTurn(bowlnumber);
         doGet(request, response);
-
     }
 
 }
